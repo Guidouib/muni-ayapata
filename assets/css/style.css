@@ -1,3 +1,79 @@
-body{
-    border-radius: 1% red;
+/*
+============================================
+    * CSS TABLE CONTENT *
+============================================
+    1.-GOOGLE FONT
+    2.-VARIABLES CSS
+    3.-BASE
+    4.-REUSABLE CSS CLASSES
+    5.-HEADER & NAV
+    6.-BREAKPOINTS
+===========================================
+    *END TABLE CONTENT*
+===========================================
+*/
+
+/*================ VARIABLE ================*/
+:root {
+    /* Header height */
+    --header-height: 56px;
+    
+    /*colors*/
+    --primary-color: hsl(354, 78%, 60%);
+    --body-color: hsl(206, 4%, 97%);
+    --text-color: hsl(0, 0%, 20%);
+    --title-color: hsl(0, 0%, 20%);
+    --bg-color: hsl(0, 0%, 100%);
+    --card-color: hsl(0, 0%, 90%);
+
+    /*  Font and typography  */
+    --body-font: 'Open Sans', sans-serif;
+    --title-font: 'Poppins', sans-serif;
+    --big-font: 2rem;
+    --medium-font: 1.5rem;
+    --normal-font: 1rem;
+    --small-font: .8rem;
+    --tiny-font: .75rem;
+
+    /*  font wight  */
+    --font-tiny:300;
+    --font-normal:400;
+    --font-medium:600;
+    --font-bold:700;
+
+    /*  margin bottom   */
+    --sp-0-5: .5rem;
+    --sp-0-75: .75rem;
+    --sp-1: 1rem;
+    --sp-1-5: 1.5rem;
+    --sp-2: 2rem;
+    --sp-2-5: 2.5rem;
+    --sp-3: 3rem;
+
+    /* z-index  */
+
+    --z-fixed:  1;
+    --z-modal:  2;
+}
+@media screen and (min-width: 992px){
+    :root {
+        --big-font: 2.5rem;
+        --medium-font: 2rem;
+        --normal-font: 1.25rem;
+        --small-font: 1rem;
+        --tiny-font: .8rem;
+    }
+}
+
+/*============= BASE =============*/
+html,
+body {
+    height: 100%;
+}
+
+html{
+    font-size: 16px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
