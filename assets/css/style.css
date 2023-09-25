@@ -16,10 +16,10 @@
 /*================ VARIABLE ================*/
 :root {
     /* Header height */
-    --header-height: 56px;
+    --header-height: 120px;
     
     /*colors*/
-    --primary-color: hsl(354, 78%, 60%);
+    --primary-color: hsl(86, 48%, 48%);
     --body-color: hsl(206, 4%, 97%);
     --text-color: hsl(0, 0%, 20%);
     --title-color: hsl(0, 0%, 20%);
@@ -208,6 +208,7 @@ button{
     position: fixed;
     bottom: 0;
     left: 0;
+    height: 100%;
     width: 100%;
     background-color: var(--bg-color);
     z-index: var(--z-fixed);
@@ -219,21 +220,31 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    background-color: var(--primary-color);
+    background: linear-gradient(45deg, #070606, FFD133);
 }
+
 .nav__logo{
     display: flex;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
-    color: var(--primary-color);
-
+    width: 5em;
+    height: 5rem;
+    padding-left: 10px;
 }
-/*
+
+.title{
+    color: var(--bg-color);
+    text-align: center;
+}
+.nav__menu{
+    background-color: var(--primary-color);
+}
 .logo--icon{
     width: 3rem;
     height: 3rem;
     color: var(--primary-color);
-}*/
+}
 
 @media (max-width: 768px){
     .nav__menu {
@@ -276,10 +287,18 @@ button{
     display: flex;
     align-items: center;
     gap: var(--sp-1);
+    margin: 0;
+    padding: 0;
+    height: var(--header-height);
+    width: 130px;
+    justify-content: center;
+    background-color: var(--bg-color);
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 55%);
 }
 
 .nav__btn i{
-    font-size: 1.25rem;
+    font-size: 2.5rem;
+    color: var(--primary-color);
 }
 
 .btn--cart {
@@ -312,4 +331,10 @@ button{
 .show--notify {
     opacity: 1;
     visibility: visible;
+}
+
+/*============MAIN===========*/
+.main {
+    height: 120px;
+    text-align: center;
 }
