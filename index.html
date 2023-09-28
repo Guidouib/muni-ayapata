@@ -15,11 +15,12 @@
 
     <!--CSS-->
     <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
-
+    <!-- JS -->
+    <script src="assets/js/main.js" type="module" defer></script>
 </head>
 <body>
     <!--LOADER-->
-    <div class="loader loader--hidden" >
+    <div class="loader" >
         <div class="loader__container">
             <span></span>
         </div>
@@ -27,14 +28,14 @@
     <!--Header-->
     <header class="header">
         <nav class="nav container">
+            <div class="container__logo">
                 <a href="/" class="nav__logo">
-                    <img src="/assets/img/escudo.png" alt="">
+                    <img src="/assets/img/escudo.png" class="logo__prin" alt="">
                 </a>
                 <h4 class="title">Municipalidad Distrital Ayapata</h4>
+            </div>
+                
                 <div class="nav__menu">
-                    <button type="button" class="nav__btn btn--close">
-                        <i class='bx bx-x'></i>
-                    </button>
                     <ul class="nav__list">
                         <li class="nav__items">
                             <a href="#" class="nav__link">Home </a>
@@ -55,6 +56,9 @@
                             <a href="#" class="nav__link">Contactos</a>
                         </li>
                     </ul>
+                    <button type="button" class="nav__btn btn--close">
+                        <i class='bx bx-x'></i>
+                    </button>
                 </div>
 
             <div class="nav__buttons">
@@ -65,7 +69,7 @@
         </nav>
     </header>
     <!--main-->
-    <main class="main">
+    <!--<main class="main">
         <section class="content">
             <div class="content__image">
                 <img class="imagen" src="assets/img/ayapata.jpeg" alt="">
@@ -74,6 +78,6 @@
             <div class="text">Bienvenidos</div>
             <div class="text__secundary">al <h1 class="portal">Portal</h1> Informativo</div>      
         </section>
-    </main>
+    </main>-->
 </body>
 </html>
