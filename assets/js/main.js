@@ -1,5 +1,5 @@
-import loader from '.componentes/loader.js';
-import showMenu from './componentes/showMenu.js'
+import loader from './componentes/loader.js';
+import showMenu from './componentes/showMenu.js';
 
 
 /* UI elements  */

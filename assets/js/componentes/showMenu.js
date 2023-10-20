@@ -10,7 +10,7 @@ function showMenu() {
             menu.classList.remove('show--menu')
         }
         if(e.target.closest('.nav__link')){
-            menu.classList.remove('show --menu')
+            menu.classList.remove('show--menu')
         }
     })
 }
