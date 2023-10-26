@@ -308,3 +308,39 @@ button{
 .show--menu{
     left: 100px;
 }
+
+/*================= MAIN ===============*/
+/*==========content============*/
+.content__image{
+    border: 2px red solid;
+    padding-top: var(--header-height);
+}
+.text__secundary{
+    display: flex;
+}
+.content__text{
+    position: absolute;
+    top: var(--header-height);
+    color: var(--bg-color);
+    font-family: var(--body-font);
+    font-size: var(--big-font);
+    font-weight: bold;
+    margin: 10% auto;
+    left: 9%;
+    width: 100% auto;
+}
+.portal{
+    font-family: var(--body-font);
+    color: var(--bg-color);
+    padding: 0px 10px 0px 10px;
+    color: var(--primary-color);
+}
+.content_parrafo{
+    position: absolute;
+    top: var(--header-height);
+    color: var(--bg-color);
+    font-family: var(--body-font);
+    margin: 35% auto;
+    left: 9%;
+    width: 100% auto;
+}
