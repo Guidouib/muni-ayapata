@@ -24,7 +24,7 @@
     --text-color: hsl(0, 0%, 20%);
     --title-color: hsl(0, 0%, 20%);
     --bg-color: hsl(0, 0%, 100%);
-    --card-color: hsl(0, 0%, 90%);
+    --card-color: hsla(0, 0%, 90%, 0.842);
 
     /*  Font and typography  */
     --body-font: 'Open Sans', sans-serif;
@@ -343,4 +343,50 @@ button{
     margin: 35% auto;
     left: 9%;
     width: 100% auto;
+}.content__option{
+    
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+    overflow: hidden;
+    border: 2px red solid;
+}
+.content__tupa{
+    background-color: var(--bg-color);
+    width: 250px;
+    height: 250px;
+    margin-bottom: var(--sp-2);
+    transition: transform .3s ease-in-out;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px black;
+}
+.content__tupa:hover{
+    transform: translateY(-10px);
+}
+.content__mpartes{
+    background-color: var(--bg-color);
+    width: 250px;
+    height: 250px;
+    margin-bottom: var(--sp-2);
+    transition: transform .3s ease-in-out;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px black;
+}
+.content__mpartes:hover{
+    transform: translateY(-10px);
+}
+.content__turismo{
+    background-color: var(--bg-color);
+    width: 250px;
+    height: 250px;
+    margin-bottom: var(--sp-2);
+    transition: transform .3s ease-in-out;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px black;
+}
+.content__turismo:hover{
+    transform: translateY(-10px);
 }
