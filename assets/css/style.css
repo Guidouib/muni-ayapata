@@ -343,50 +343,100 @@ button{
     margin: 35% auto;
     left: 9%;
     width: 100% auto;
-}.content__option{
-    
-    flex-direction: column;
+}
+.content__option{
     display: flex;
-    align-items: center;
-    align-content: center;
+    flex-wrap: wrap;
     justify-content: center;
-    
+    align-items: center;
+    gap: var(--sp-2);
     overflow: hidden;
-    border: 2px red solid;
+    margin-top: -45px;
 }
 .content__tupa{
     background-color: var(--bg-color);
-    width: 250px;
-    height: 250px;
-    margin-bottom: var(--sp-2);
-    transition: transform .3s ease-in-out;
-    border-radius: 10%;
-    box-shadow: 0px 0px 10px black;
+    transition: transform .3s ease-in-out;;
+    border-radius: 5%;
+    box-shadow: 0px 10px 10px  rgba(0, 0, 0,0.09);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .content__tupa:hover{
     transform: translateY(-10px);
 }
 .content__mpartes{
-    background-color: var(--bg-color);
-    width: 250px;
-    height: 250px;
-    margin-bottom: var(--sp-2);
+    background-color: var(--bg-color);    
     transition: transform .3s ease-in-out;
-    border-radius: 10%;
-    box-shadow: 0px 0px 10px black;
+    border-radius: 5%;
+    box-shadow: 0px 10px 10px  rgba(0, 0, 0,0.09);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .content__mpartes:hover{
     transform: translateY(-10px);
 }
 .content__turismo{
     background-color: var(--bg-color);
-    width: 250px;
-    height: 250px;
-    margin-bottom: var(--sp-2);
     transition: transform .3s ease-in-out;
-    border-radius: 10%;
-    box-shadow: 0px 0px 10px black;
+    border-radius: 5%;
+    box-shadow: 0px 10px 10px  rgba(0, 0, 0,0.09);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 .content__turismo:hover{
     transform: translateY(-10px);
+}
+.content__one{
+    text-align: center;
+}
+.bxs-file-pdf{
+    font-size: 100px;
+    top: 10px;
+}
+
+.content__two{
+    color: black;
+    font-family: var(--body-font);
+    font-weight: bold;
+    text-align: center;
+
+}
+.content__tree{
+    display: flex;
+    text-align: center;
+}
+/*=============DESCRIPCION DEL ALCALDE ===============*/
+.description{
+    display: flex;
+    flex-flow: row wrap;
+    /*flex-wrap: wrap;*/
+    border: 2px red solid;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sp-2);
+    padding-top: 30px;
+}
+.description__foto{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+.description__description{
+    width: 300px;
+    height: 300px;
+    border: 2px red solid;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
 }
