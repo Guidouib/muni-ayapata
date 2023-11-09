@@ -24,7 +24,8 @@
     --text-color: hsl(0, 0%, 20%);
     --title-color: hsl(0, 0%, 20%);
     --bg-color: hsl(0, 0%, 100%);
-    --tree-color: rgba(58, 52, 52, 0.151);;
+    --tree-color: rgba(58, 52, 52, 0.151);
+    --footer-color: rgb(33,34,38,100%);
 
     /*  Font and typography  */
     --body-font: 'Open Sans', sans-serif;
@@ -616,4 +617,79 @@ button{
 .slide img{
     width: auto;
     height: auto;
+}
+/*=========FOOTER PIE DE PAGINA===============*/
+.footer{
+    height: 100%;
+    width: 100%;
+    border: 2px red solid;
+    background-color: var(--footer-color);
+}
+.footer__primary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: var(--sp-2-5);
+}
+.footer__logo{
+
+     border-radius: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: var(--sp-2);
+}
+.footer__logoimg{
+    height: 320px;
+    width: 320px;
+
+    background-color: var(--second-color);
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__logoimg img{
+    width: 250px;
+    height: 250px;
+}
+.footer__iconSocial{
+    width: 280px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sp-1);
+}
+.icons__social{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    color: var(--tree-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons__social i{
+    color: var(--footer-color);
+}
+.footer__ubicacion{
+    height: 434px;
+    width: 320px;
+    border: 2px orange solid;
+}
+.footer__nav{
+    height: 434px;
+    width: 320px;
+    border: 2px greenyellow solid;
+}
+.footer__publicacion{
+    height: 434px;
+    width: 320px;
+    border: 2px orchid solid;
 }
