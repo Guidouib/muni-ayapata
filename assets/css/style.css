@@ -319,6 +319,11 @@ button{
 .text__secundary{
     display: flex;
 }
+.content__portada{
+    display: flex;
+    flex-direction: column;
+    border: 2px orange solid;
+}
 .content__text{
     position: absolute;
     top: var(--header-height);
@@ -326,7 +331,6 @@ button{
     font-family: var(--body-font);
     font-size: var(--big-font);
     font-weight: bold;
-    margin: 10% auto;
     left: 9%;
     width: 100% auto;
 
@@ -342,7 +346,7 @@ button{
     top: var(--header-height);
     color: var(--bg-color);
     font-family: var(--body-font);
-    margin: 35% auto;
+  
     left: 9%;
     width: 100% auto;
 }
@@ -632,6 +636,7 @@ button{
     align-items: center;
     gap: var(--sp-2);
     padding: var(--sp-2-5);
+    border-bottom: 2px var(--bg-color) solid;
 }
 .footer__logo{
 
@@ -681,15 +686,153 @@ button{
 .footer__ubicacion{
     height: 434px;
     width: 320px;
-    border: 2px orange solid;
 }
 .footer__nav{
     height: 434px;
     width: 320px;
-    border: 2px greenyellow solid;
 }
 .footer__publicacion{
     height: 434px;
     width: 320px;
-    border: 2px orchid solid;
+}
+.footer__ubicacion{
+    display: flex;
+    flex-direction: column;
+}
+.footer__ubicacion i{
+    font-size: 35px;
+}
+.footer__titleUbi{
+    padding-bottom: 5px;
+    border-bottom: 2px var(--primary-color) solid;
+}
+.footer__titleUbi h2{
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: none;
+}
+.footer__ubi p{
+    color: var(--bg-color);
+    font-size: 17px;
+}
+.footer__ubi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sp-1);
+    padding-bottom: 5px;
+}
+.footer__mpvH{
+    padding-bottom: 5px;
+}
+.footer__mpvH p{
+    color: var(--bg-color);
+    font-weight: none;
+    font-size:22px;
+}
+.footer__time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--sp-1);
+    padding-bottom: 5px;
+}
+.footer__time p{
+    color: var(--bg-color);
+    font-size: 17px;
+}
+.footer__contacto{
+    display: flex;
+    flex-direction: column;
+}
+.footer__contactoE{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--sp-1);
+    padding-bottom: 5px;
+    padding-left: 45px;
+}
+.footer__contactoC{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--sp-1);
+    padding-bottom: 5px;
+    padding-left: 45px;
+}
+.footer__contactoE p{
+    color: var(--bg-color);
+    font-size: 15px;
+}
+.footer__contactoC P{
+    color: var(--bg-color);
+    font-size: 15px;
+}
+.footer__nav{
+    display: flex;
+    flex-direction: column;
+}
+.footer__navegacion{
+    border-bottom:2px  var(--primary-color) solid;
+}
+.footer__navegacion h2{
+    color: var(--primary-color);
+    font-weight: none;
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+.footer__navoption{
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__navoption i{
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+}
+.footer__navoption a{
+    font-size: 17px;
+    color: var(--bg-color);
+}
+.footer__publicacion{
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-0-75);
+}
+.footer__ultimaT{
+    border-bottom: 2px var(--primary-color) solid;
+    padding-bottom: 5px;
+}
+.footer__ultimaT h2{
+    font-weight: none;
+    color: var(--primary-color);
+    font-size: 25px;
+}
+.footer__publicacionsU{
+    border-bottom: 2px var(--bg-color) solid;
+}
+.footer__publicacionsU a{
+    color: var(--bg-color);
+    font-size: 17px;
+}
+.footer__secundary{
+    width: auto;
+    height: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.footer__secundary p{
+    color: var(--bg-color);
+    font-size: 20px;
+    padding-left: 10px;
+
+}
+.footer__secundary i{
+    color: var(--bg-color);
 }
