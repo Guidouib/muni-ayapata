@@ -221,23 +221,48 @@ button{
 }
 
 .container__logo{
-    border: 2px red solid;
     background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 10px;
     width: 75%;
     height: var(--header-height);
     clip-path: polygon(0% 0%, 60% 0%, 100% 0%, 97% 55%, 98% 100%, 0% 100%);
 }
-.title{
+.principal__title{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.title{
     text-align: center;
+    color: var(--bg-color);
+    font-weight: bold;
+    font-size: 5.5vw;
+    padding-top: 30px;
+    padding-left: 0%;
+    margin-left: 0%;
+    padding-right: 10px;
+
+}
+.title__two{
+    font-size: var(--body-font);
+    font-size: 5.5vw;
+    text-align: center;
+    font-weight: none;
+    padding-top: -5px;
+    margin-top: -5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: var(--bg-color);
 }
 .logo__prin{
-    width: 4rem;
-    height: 4rem;
+    padding: 10px;
+    width: 7rem;
+    height: 7rem;
+
 }
 
 
@@ -251,6 +276,18 @@ button{
         background-color: var(--bg-color);
         z-index: var(--z-fixed);
         transition: left 0.3s ease-in-out;
+    }
+    .content__portada{
+        width: 90%;
+    }
+    .text{
+        font-size: 7vw;
+    }
+    .text__secundary{
+        font-size: 7vw;
+    }
+    .content_parrafo{
+        font-size: 3vw;
     }
 }
 .nav__buttons{
@@ -322,10 +359,14 @@ button{
 .content__portada{
     display: flex;
     flex-direction: column;
-    border: 2px orange solid;
+    margin-top: -50%;
+    margin-left: 5%;
+    position: absolute;
+    z-index: 0;
+
 }
 .content__text{
-    position: absolute;
+    
     top: var(--header-height);
     color: var(--bg-color);
     font-family: var(--body-font);
@@ -333,6 +374,7 @@ button{
     font-weight: bold;
     left: 9%;
     width: 100% auto;
+ 
 
 }
 .portal{
@@ -342,7 +384,7 @@ button{
     color: var(--primary-color);
 }
 .content_parrafo{
-    position: absolute;
+
     top: var(--header-height);
     color: var(--bg-color);
     font-family: var(--body-font);
@@ -360,6 +402,7 @@ button{
     margin-top: -45px;
     padding-bottom: 50px;
     background-color: var(--tree-color);
+    border: 2px red solid;
 }
 .content__tupa{
     background-color: var(--bg-color);
@@ -437,13 +480,23 @@ button{
     background-color: var(--tree-color);
 }
 .description__foto{
-    width: 300px;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right:2px var(--primary-color) solid;
+    width: 433px;
+    height: 452px;
     padding: 10px;
 }
+.name{
+    font-weight: none;
+    font-family: var(--big-font);
+    font-size: 2.5vw;
+}
 .description__description{
-    width: 300px;
-    height: 300px;
+    width: 433px;
+    height: 452px;
     border: 2px red solid;
     display: flex;
     text-align: center;
@@ -828,11 +881,95 @@ button{
     margin: 30px;
 }
 .footer__secundary p{
+    text-align: center;
     color: var(--bg-color);
-    font-size: 20px;
+    font-size: 4vw auto;
     padding-left: 10px;
 
 }
 .footer__secundary i{
     color: var(--bg-color);
+}
+/*================== BREACKPOINTS ================*/
+@media (min-width: 768px){
+    .header{
+        height:81px;
+        top: 0;
+        bottom: unset;
+    }
+    .nav__list{
+        display: flex;
+     
+        justify-content: flex-end;
+    }
+    .nav__buttons,
+    .btn--close, 
+    .btn--menu{
+        display: none;
+    }
+    .nav__menu .btn--close{
+        display: none;
+    }
+    .logo__prin{
+        display: none;
+    }
+    .container{
+        height: 81px;
+    }
+
+    .principal__title{
+        margin: 10px;
+
+    }
+    .title{
+        font-size: 2vw
+    }
+    .title__two{
+        font-size: 2.5vw;
+    }
+    .container__logo{
+        background-color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px;
+        width: 25%;
+        height: 81px;
+        clip-path: polygon(0% 0%, 60% 0%, 100% 0%, 90% 55%, 97% 100%, 0% 100%);
+        padding-right: 10px;
+    }
+    .nav__menu{
+        width: -100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-left:25%;
+        margin-top: -60px;
+        padding-right: 15px;
+    }
+    .nav__link{
+        font-size: 1.5vw;
+        border-radius: 25%;
+    }
+
+    .main{
+        margin-top:0%;
+        padding-top: 0%;
+    }
+    .content__image{
+        margin-top: 0%;
+        padding-top: 81px;
+    }
+    .content__portada{
+        display: flex;
+        margin-top: -45%;
+        justify-content: center;
+    }
+    .text{
+        font-size: 8vw;
+    }
+    .text__secundary{
+        font-size: 50px;
+        font-size: 8vw;
+    }
+
 }
