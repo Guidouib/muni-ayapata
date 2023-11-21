@@ -1104,3 +1104,45 @@ button{
         font-size: 8vw;
     }
 }
+@media (min-width: 1024px){
+
+    .encabezado__primary{
+        display: flex;
+        justify-content: space-between;
+    }
+    .date__Contacto{
+        display: flex;
+        justify-content: center;
+    }
+    .encabezado__buscador{
+        display: flex;
+        justify-content: center;
+    }
+    /*================nav menu================*/
+    .header{
+        border: 2px red solid;
+        justify-content: center;
+    }
+    .container__logo{
+        border: 2px yellow solid;
+    }
+    nav{
+        border:  2px greenyellow solid;
+    }
+    .nav__menu{
+        position: absolute;
+        border: 2px orange solid;
+        margin-left: 254px auto;
+        padding-top: 0px;
+        margin-top: -75px;
+        align-items: center;
+
+    }
+    .nav__list{
+        border: 2px red solid;
+    }
+    .nav__items{
+        padding: 0px 1vw 0px 1vw;
+
+    }
+}
