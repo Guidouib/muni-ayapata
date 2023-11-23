@@ -336,12 +336,35 @@ button{
     padding: var(--sp-0-75) var(--sp-1);
     color: var(--text-color);
     transition: color .3s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
+.nav__items li a{
+    color: black;
+    text-decoration: none;
+    background-color: var(--bg-color);
+    padding:10px 18px;
+    line-height: 20px;
+    font-size: 2.5vw;
+    display: block;
+    width: 250px;
+}
+.nav__items li a:hover{
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.nav__list li ul{
+    display: none;
+    position: absolute;
+} 
+.nav__list li:hover > ul{
+    display: block;
+}
 .nav__link:hover{
-    color: var(--primary-color);
+    color: var(--primary-color);;
 }
-
 .nav__buttons{
     font-size: 1.25rem;
 }
@@ -357,7 +380,11 @@ button{
 
 }
 .text__secundary{
-    display: flex;
+    
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: fadeInUp;
+    animation-duration: 2s;
 }
 .content__portada{
     display: flex;
@@ -376,11 +403,27 @@ button{
     left: 9%;
     width: 100% auto;
 }
+.text{
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: fadeInDown;
+    animation-duration: 2s; 
+}
+.content_parrafo p{
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: fadeInRightBig;
+    animation-duration: 3s;
+}
 .portal{
     font-family: var(--body-font);
     color: var(--bg-color);
     padding: 0px 10px 0px 10px;
     color: var(--primary-color);
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: fadeInUp;
+    animation-duration: 2s; 
 }
 .content_parrafo{
 
@@ -485,6 +528,7 @@ button{
 .content__tree{
     display: flex;
     text-align: center;
+    color: black;
 }
 /*=============DESCRIPCION DEL ALCALDE ===============*/
 .description{
@@ -674,12 +718,21 @@ button{
 .news__more{
     background-color: var(--primary-color);
     font-size: 25px;
-    font-weight: bold;
+    font-family: sans-serif;
+    font-weight: none;
     width: 144px;
     height: 41px;
     border-radius: 20px;
     align-items: center;
     margin-top: 20px;
+    color: black;
+}
+.news__more:hover{
+    background-color: var(--bg-color);
+    border: 2px var(--primary-color) solid;
+    position: relative;
+    color: var(--primary-color);
+
 }
 /*============carrusel de la pagina web ================*/
 /*.slider{
@@ -1139,6 +1192,11 @@ button{
         font-size: 1.5vw;
         border-radius: 25%;
     }
+    .nav__items li a{
+        line-height: 25px;
+        font-size: 1.5vw;
+        line-height: 10px;
+    }
     .main{
         margin-top:0%;
         padding-top: 0%;
@@ -1160,9 +1218,20 @@ button{
         font-size: 8vw;
     }
     .content__option{
-
         margin-top: -100px;
         padding: 20px;
+    }
+    .content__tree{
+        font-size: 1.7vw;
+    }
+    .content__tupa:hover .content__tree{
+        color: var(--bg-color);
+    }
+    .content__mpartes:hover .content__tree{
+        color: var(--bg-color);
+    }
+    .content__turismo:hover .content__tree{
+        color: var(--bg-color);
     }
     .news{
         display: flex;
@@ -1207,6 +1276,10 @@ button{
     }
     .nav__items{
         padding: 0px 1vw 0px 1vw;
+    }
+    .nav__items li a{
+        line-height: 25px;
+        font-size: 1.2vw;
     }
     /*==============diseño de pantalla de inicio ==============*/
     .content__text{
