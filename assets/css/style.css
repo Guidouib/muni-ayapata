@@ -210,6 +210,10 @@ button{
     }
 }
 /*============= HEADER =============*/
+.date__Contacto h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: none;
+}
 .header{
     position: static;
     left: 0;
@@ -250,18 +254,20 @@ button{
     padding-left: 0%;
     margin-left: 0%;
     padding-right: 10px;
+    font-family: 'Open Sans', sans-serif;
 
 }
 .title__two{
     font-size: var(--body-font);
     font-size: 5.5vw;
     text-align: center;
-    font-weight: none;
+    font-weight: bold;
     padding-top: -5px;
     margin-top: -5px;
     padding-bottom: 10px;
     margin-bottom: 10px;
     color: var(--bg-color);
+    font-family: 'Open Sans', sans-serif;
 }
 .logo__prin{
     padding: 10px;
@@ -327,7 +333,6 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .nav__link{
@@ -337,7 +342,6 @@ button{
     color: var(--text-color);
     transition: color .3s ease-in-out;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 .nav__items li a{
@@ -349,6 +353,7 @@ button{
     font-size: 2.5vw;
     display: block;
     width: 250px;
+    font-family: 'Open Sans', sans-serif;
 }
 .nav__items li a:hover{
     background-color: var(--primary-color);
@@ -514,16 +519,16 @@ button{
 .content__one{
     text-align: center;
 }
-.bxs-file-pdf{
+.content__one i{
     font-size: 100px;
     top: 10px;
+    color:var(--primary-color);
 }
 .content__two{
     color: black;
     font-family: var(--body-font);
     font-weight: bold;
     text-align: center;
-
 }
 .content__tree{
     display: flex;
@@ -555,16 +560,24 @@ button{
 }
 .name{
     font-weight: none;
-    font-family: var(--big-font);
-    font-size: 2.5vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    opacity: 75%;
 }
 .description__description{
     width: 433px;
     height: 452px;
     display: flex;
-    text-align: center;
-    align-items: center;
-    padding: 40px;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    font-size: 1rem;
+}
+.description__description p{
+    font-size: 1rem;
+}
+.description__description h1{
+    font-size: 2rem;
 }
 .option{
     display: flex;
@@ -599,7 +612,12 @@ button{
     box-shadow: 0px 10px 10px  rgba(0, 0, 0,0.09);
 }
 .option__secction1 i{
+    font-size: 100px;
     color: var(--bg-color);
+}
+.option__secction i{
+    font-size: 100px;
+    color: var(--primary-color);
 }
 .option__secction1 div{
     font-weight: bold;
@@ -735,7 +753,8 @@ button{
 
 }
 /*============carrusel de la pagina web ================*/
-/*.slider{
+/*
+.slider{
     width: 95vw;
     height: auto;
     margin: auto;
@@ -765,33 +784,53 @@ button{
     }
 }*/
 .slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider .slide-track{
     background-color: var(--second-color);
-}
-.slide-track{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    scroll-behavior: auto;
-    gap: 1.2rem;
-    overflow-y: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    width: 100%;
-    padding: 25px;
-}
-.slide{
-    width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+    padding: var(--sp-2);
+    width: 95%;
+    gap: var(--sp-1);
     height: 150px;
+    overflow: hidden;
     background-color: var(--bg-color);
+    scroll-behavior: smooth;
+}
+
+
+.silder .slide-track img{
+    margin: 10px;
+    width: 20px;
+    height: 10px;
+}
+.slider .fa-solid{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    object-fit: contain;
+    color: var(--bg-color);
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+
 }
-.slide img{
-    width: auto;
-    height: auto;
+.slider .fa-chevron-left{
+    left: 2px;
+    transform: translate(0, 170%);
+}
+.slider .fa-chevron-right{
+    right: 2px;
+    transform: translate(0, 170%);
 }
 /*=========FOOTER PIE DE PAGINA===============*/
 .footer{
@@ -809,7 +848,6 @@ button{
     border-bottom: 2px var(--bg-color) solid;
 }
 .footer__logo{
-
      border-radius: 50%;
      display: flex;
      flex-direction: column;
@@ -820,7 +858,6 @@ button{
 .footer__logoimg{
     height: 320px;
     width: 320px;
-
     background-color: var(--second-color);
     border-radius: 50%;
     display:flex;
@@ -1331,7 +1368,7 @@ button{
         height: 500px;
     }
     .description__foto h3{
-        font-size: 2vw;
+        font-size: 1.5vw;
         line-height: 25px;
     }
     /*==========noticias===============*/
@@ -1369,8 +1406,7 @@ button{
     }
     /*=======enlaces opcionales================*/
     .slide{
-        width: 148px;
-        height: 105px;
+       
     }
     /*============ footer pie de pagina ===========*/
     .footer__logo{

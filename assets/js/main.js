@@ -1,5 +1,6 @@
 import loader from './componentes/loader.js';
 import showMenu from './componentes/showMenu.js';
+import carousel from './componentes/slider.js';
 
 
 /* UI elements  */
@@ -8,3 +9,5 @@ import showMenu from './componentes/showMenu.js';
 loader()
 /*show menu */
 showMenu()
+/*carousel */
+carousel()
