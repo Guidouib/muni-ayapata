@@ -191,7 +191,9 @@ button{
 .loader--hidden{
     opacity: 0;
     visibility: hidden;
-    transition: all 3.0s ease-in-out;
+    transform: scale(0.5);
+    transition: all 30.0s ease-in-out;
+    display: none;
 }
 
 @keyframes pulse {
@@ -385,7 +387,8 @@ button{
     display: flex;
 }
 .history__imagenE img{
-    height: 300px;
+    border: 2px orange solid;
+    height: 392px;
     width: 100%;
 }
 .history__imagenE{
